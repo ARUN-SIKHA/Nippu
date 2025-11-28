@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NippuKoodi - Contact</title>
+<link rel="icon" type="image/png" sizes="32x32" href="logo.png">
+<style>
+html, body{margin:0;padding:0;font-family:Arial,sans-serif;background:#f5f7fa;color:#333;}
+header{position:fixed; top:0; left:0; right:0; height:70px; display:flex; justify-content:space-between; align-items:center; padding:0 30px; box-shadow:0 2px 5px rgba(0,0,0,0.1); z-index:1000; background:#fff;}
+#title{font-family:'Georgia','Times New Roman',serif;font-size:28px;font-weight:bold;text-decoration:none;color:#333;}
+nav a{margin-left:20px;text-decoration:none;font-weight:600;color:#333;}
+nav a:hover{color:#0077cc;text-decoration:underline;}
+main{padding-top:100px; max-width:800px; margin:0 auto; padding:0 20px; text-align:center;}
+h1{font-size:2rem;margin-bottom:20px;}
+p{margin-bottom:30px;}
+.contact-form{display:flex;flex-direction:column;gap:15px; max-width:500px;margin:0 auto;}
+.contact-form input, .contact-form textarea{padding:12px;border-radius:6px;border:1px solid #ccc;width:100%; font-size:1rem;}
+.contact-form button{padding:12px;border:none;border-radius:6px;background:#0077cc;color:#fff;font-weight:bold;cursor:pointer;transition:0.3s;}
+.contact-form button:hover{background:#005fa3;}
+.back-home{text-align:center;margin-top:40px;}
+.back-home a{text-decoration:none;color:#0077cc;font-weight:bold;}
+.back-home a:hover{text-decoration:underline;}
+</style>
+</head>
+<body>
+<header>
+<a id="title" href="index.html">NippuKoodi</a>
+<nav><a href="index.html">Home</a><a href="history.html">About</a></nav>
+</header>
+
+<main>
+<h1>Contact Us</h1>
+<p>Reach out to discuss partnership opportunities or for workers interested in joining our vetted workforce.</p>
+
+<form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+  <button type="submit">Send Message</button>
+</form>
+
+<div class="back-home"><p><a href="index.html">← Back to Home</a></p></div>
+</main>
+</body>
+</html>
